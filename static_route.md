@@ -1,55 +1,7 @@
 ## Router have 3 types terminal
-- 1. User Execution Mode: `Router>enable`
-- 2. User Privileage Mode: `Router#configure terminal` [show, monitoring, save config, ping]
-- 3. Global Configuration Mode: `Router(config)#` [ip, route, password, encryption, hash encryption]
-
-- `Router>enable`
-- `Router#configure terminal`
-
-### 3. User Configuration Mode: Router(config)#
-
-#### Router Name Change
-- `Router(config)#hostname testrouter1`
-
-#### Password Assign [for user execution mode]:
-- `R1(config)#line console 0`
-- `R1(config-line)#password cisco`
-- `R1(config-line)#login`
-
-
-### 2. User Privileage Mode: Router#
-
-#### See Running Configuration:
-- `Router#show running-config`
-
-#### See Startup Configuration:
-- `Router#show startup-config`
-
-#### Save Running to Startup:
-- `Router#copy running-config startup-config`
-
-#### Password Assign [for user previleage mode]:
-- Router(config)#enable password ccna
-
-#### Password Encrypt [for user global configuration mode]:
-- `Router(config)#service password-encryption`
-
-#### Password Hash Encrypt [for user global configuration mode]:
-- `Router(config)#enable secret abcd` [hash hncription password get the preference]
-
-#### Jump to Priviledge Mode:
-- `Router(config)#Ctrl+z`
-
-#### IP Address Assign in Serial Interface:
-- `Router>enable`
-- `Router#configure terminal`
-- `Router(config)#interface serial 0/0/0`
-- `Router(config-if)#ip address 20.0.0.1 255.0.0.0`
-- `Router(config-if)#clock rate 64000`
-- `Router(config-if)#no shutdown`
-
-##### Remove ip route:
-- `R1(config)#no ip route 210.0.0.0 255.0.0.0 30.0.0.2`
+- A. User Execution Mode: `Router>enable`
+- B. User Privileage Mode: `Router#configure terminal` [show, monitoring, save config, ping]
+- C. Global Configuration Mode: `Router(config)#` [ip, route, password, encryption, hash encryption]
 
 ## Static IP Route:
 #### IP Address Assign in R1:
@@ -57,7 +9,7 @@
 - `Router>enable` [go to privilege mode]
 - `Router#configure terminal` [go to global configuration mode]
 - `Router(config)#hostname R1` [change hostname]
-- `R1(config)#line console 0` [password at user previleage mode]
+- `R1(config)#line console 0` [go to line console for set password at user previleage mode]
 - `R1(config-line)#password cisco` [password is cisco]
 - `R1(config-line)#login` [password needed at login]
 - `R1(config-line)#exit`
@@ -104,3 +56,6 @@
 - `R2#copy running-config startup-config`
 - `R2#show startup-config`
 - `R2#exit`
+
+##### Remove ip route:
+- `R1(config)#no ip route 210.0.0.0 255.0.0.0 30.0.0.2`
