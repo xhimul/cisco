@@ -53,10 +53,10 @@
 
 ## Static IP Route:
 #### IP Address Assign in R1:
-- `Continue with configuration dialog? [yes/no]: no`
-- `Router>enable`
-- `Router#configure terminal`
-- `Router(config)#hostname R1`
+- `Continue with configuration dialog? [yes/no]: no` [manual configuration]
+- `Router>enable` [go to privilege mode]
+- `Router#configure terminal` [go to global configuration mode]
+- `Router(config)#hostname R1` [change hostname]
 - `R1(config)#line console 0` [password at user previleage mode]
 - `R1(config-line)#password cisco` [password is cisco]
 - `R1(config-line)#login` [password needed at login]
@@ -80,10 +80,10 @@
 - `R1#exit`
 
 #### IP Address Assign in R2:
-- `Continue with configuration dialog? [yes/no]: no`
-- `Router>enable`
-- `Router#configure terminal`
-- `Router#hostname R2`
+- `Continue with configuration dialog? [yes/no]: no` [manual configuration]
+- `Router>enable` [go to privilege mode]
+- `Router#configure terminal` [go to global configuration mode]
+- `Router#hostname R2` [change hostname]
 - `R2(config)#line console 0` [password at user previleage mode]
 - `R2(config-line)#password cisco` [password is cisco]
 - `R2(config-line)#login` [password needed at login]
