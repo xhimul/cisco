@@ -1,12 +1,10 @@
 ## Router have 3 types terminal
 - 1. User Execution Mode: `Router>enable`
-- 2. User Privileage Mode: `Router#configure terminal`  [show, monitoring, save config, ping]
-- 3. Global Configuration Mode: `Router(config)#`
+- 2. User Privileage Mode: `Router#configure terminal` [show, monitoring, save config, ping]
+- 3. Global Configuration Mode: `Router(config)#` [ip, route, password, encryption, hash encryption]
 
 - `Router>enable`
 - `Router#configure terminal`
-
-
 
 ### 3. User Configuration Mode: Router(config)#
 
